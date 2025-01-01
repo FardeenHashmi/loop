@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "loop-f10b8-56c7e",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

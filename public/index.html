@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop - Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Loop</h1>
+        <nav style="display: none;">
+            <a href="#" id="profile-link">Profile</a>
+            <a href="#" id="logout-link">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Email:</label>
+                <input type="email" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="feed" style="display: none;">
+            <h2>Feed</h2>
+            <form id="postForm">
+                <input type="text" id="postContent" placeholder="What's on your mind?" required>
+                <button type="submit">Post</button>
+            </form>
+            <div id="posts">
+                <!-- Posts will be displayed here -->
+            </div>
+        </section>
+        <section id="profile" style="display: none;">
+            <h2>Your Profile</h2>
+            <form id="profileForm">
+                <label for="profileName">Name:</label>
+                <input type="text" id="profileName" required>
+                <label for="profileBio">Bio:</label>
+                <textarea id="profileBio" required></textarea>
+                <button type="submit">Save</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
